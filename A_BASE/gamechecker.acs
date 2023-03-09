@@ -44,8 +44,8 @@ Script "GameChecker" Enter
 		is_action = (CheckInventory("ActionFists") || CheckInventory("ActionFists2") || CheckInventory("BrassKnuckles") || CheckInventory("CheetahFists") || CheckInventory("DragonFists") || CheckInventory("DragonFistsWithBrassKnuckles")) && (GetBaseGame()==BASEGAME_URBANBRAWL || GetBaseGame()==BASEGAME_UNKNOWN);
 		is_hacx = CheckInventory("HacxKick") && (GetBaseGame()==BASEGAME_HACX || GetBaseGame()==BASEGAME_UNKNOWN);
 		is_square = CheckInventory("PaintGun") && (GetBaseGame()==BASEGAME_SQUARE || GetBaseGame()==BASEGAME_UNKNOWN);
-		is_PB203 = ( !CheckInventory("QSSGAmmoCounter") && CheckInventory("IsPlayingAsProjectBrutality") );
-		is_PB3 = ( ( CheckInventory("QSSGAmmoCounter") && CheckInventory("IsPlayingAsProjectBrutality") ) || ( CheckInventory("VanillaRifle") && CheckInventory("IsPlayingAsPurist") ) || ( CheckInventory("Traditional_Fist") && CheckInventory("IsPlayingAsTraditional") ) || CheckInventory("PB_Pistol") );
+		is_PB203 = ( !CheckInventory("PB_Pistol") && CheckInventory("IsPlayingAsProjectBrutality") );
+		is_PB3 = ( ( CheckInventory("PB_Pistol") && CheckInventory("IsPlayingAsProjectBrutality") ) || ( CheckInventory("VanillaRifle") && CheckInventory("IsPlayingAsPurist") ) || ( CheckInventory("Traditional_Fist") && CheckInventory("IsPlayingAsTraditional") ) || CheckInventory("PB_Pistol"));
 		is_brutalv20 = ( ( GetActorProperty(ActivatorTID(),APROP_Mass)==100 && !CheckInventory("IsPlayingAsPurist") && CheckInventory("Melee_Attacks") ) || ( GetActorProperty(ActivatorTID(),APROP_Mass)==100 && CheckInventory("ClassicFist") ) );
 		is_brutalv21 = ( ( GetActorProperty(ActivatorTID(),APROP_Mass)==130 && !CheckInventory("BP_Pistol") && !CheckInventory("IsTacticalClass") && CheckInventory("Melee_Attacks") ) || CheckInventory("BrutalPistol") || CheckInventory("IsTacticalClass") || ( GetActorProperty(ActivatorTID(),APROP_Mass)==130 && CheckInventory("IsPlayingAsPurist") ) );
 		is_bpv9 = ( CheckInventory("BP_Pistol") && GetActorProperty(ActivatorTID(),APROP_Mass)==500 );

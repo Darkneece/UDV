@@ -12,8 +12,6 @@ global int 43:totaldamage[];//totaldamage counter
 global int 49:givestartarmor;
 global int 51:givestartbattery;
 
-//str UDV_Version = "2.12c"; //Current UDV Version
-
 int	UDV_SpeedFatigued[8]; //global fatigued speed variable
 int	UDV_SpeedEnergized[8]; //global energized speed variable
 int UDV_JumpFatigued[8];
